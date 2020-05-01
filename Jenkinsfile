@@ -10,7 +10,7 @@ pipeline {
         string(name: 'HARBOR_HOST', defaultValue: '10.0.5.4', description: 'harbor仓库地址')
         string(name: 'DOCKER_IMAGE', defaultValue: 'tssp/pipeline-demo', description: 'docker镜像名')
         string(name: 'APP_NAME', defaultValue: 'pipeline-demo', description: 'k8s中标签名')
-        string(name: 'K8S_NAMESPACE', defaultValue: 'demo', description: 'k8s的namespace名称')
+        string(name: 'K8S_NAMESPACE', defaultValue: 'pipeline-project01', description: 'k8s的namespace名称')
     }
     stages {
         stage('Maven Build') {
